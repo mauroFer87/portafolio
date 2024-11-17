@@ -1,0 +1,101 @@
+/* Contact.css */
+
+/* Estilos para la sección Contact */
+.contact {
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec); /* Gradiente de fondo más claro */
+    color: #333333;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact h2 {
+    color: #0073e6; /* Azul */
+    font-size: 2.4em;
+    margin-bottom: 25px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    color: #444444;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #0073e6; /* Borde azul */
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: #ffffff; /* Fondo blanco */
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #005bb5; /* Azul oscuro */
+}
+
+.submit-button {
+    background-color: #00c2ff; /* Celeste */
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0073e6; /* Azul */
+}
+
+.email-link {
+    color: #0073e6; /* Azul */
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 40px;
+}
+
+.social-media-link {
+    display: inline-block;
+    margin: 0 15px;
+    color: #333333;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.social-media-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.social-media-link:hover {
+    color: #0073e6; /* Azul */
+}

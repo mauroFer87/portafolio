@@ -1,0 +1,82 @@
+/* Estilos para el contenedor del navbar */
+.navbar {
+    background: linear-gradient(to right, #000000, #333333); /* Gradiente de negro */
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #0073e6; /* Línea inferior azul */
+    position: fixed; /* Fijar la posición */
+    top: 0; /* Posición en la parte superior */
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    box-sizing: border-box; /* Asegurarse de que el padding no aumente el ancho */
+}
+
+/* Estilos para el logo */
+.navbar-logo img {
+    width: 40px; /* Ajustar tamaño del logo */
+    height: auto;
+}
+
+/* Estilos para la lista de navegación */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Aumentar espacio entre los enlaces */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em; /* Reducir tamaño de los enlaces */
+    transition: color 0.3s ease; /* Transición suave para el color */
+    margin-right: 15px; /* Dar margen a la derecha de los enlaces */
+}
+
+.nav-links a:hover {
+    color: #00c2ff; /* Celeste */
+}
+
+/* Estilos para el menú hamburguesa */
+.hamburger {
+    display: none; /* Oculto por defecto */
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+/* Media queries para pantalla pequeña */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Mantener dirección a fila */
+        padding: 10px 20px; /* Ajustar padding */
+        justify-content: space-between; /* Asegurar que los elementos estén bien distribuidos */
+    }
+
+    .navbar-logo {
+        margin-right: auto; /* Alinear logo a la izquierda */
+        margin-left: 0; /* Asegurar que el logo no tenga margen izquierdo */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin: 0; /* Asegurar que la lista no tenga márgenes */
+    }
+
+    .nav-list.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto; /* Alinear hamburguesa a la derecha */
+    }
+}

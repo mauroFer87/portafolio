@@ -1,0 +1,46 @@
+/* Skills.css */
+
+/* Estilos para la sección Skills */
+.skills {
+    background: linear-gradient(to right, #00c2ff, #0073e6); /* Gradiente de celeste a azul */
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.skills h1 {
+    color: #000000; /* Negro */
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.skills h2 {
+    color: #ffffff; /* Blanco */
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills li {
+    background-color: #333333; /* Gris oscuro */
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.skills li:hover {
+    background-color: #000000; /* Negro */
+}

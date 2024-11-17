@@ -1,0 +1,33 @@
+/* About.css */
+
+/* Estilos para la sección About */
+.about {
+    background: linear-gradient(to right, #d9e2ec, #f0f4f8); /* Gradiente de celeste claro a blanco */
+    color: #333333;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.about h1 {
+    color: #0073e6; /* Azul */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #00c2ff; /* Borde celeste */
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+}
