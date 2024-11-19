@@ -81,7 +81,9 @@ def contact_form(request):
         recaptcha_request = requests.post(recaptcha_url, data=recaptcha_data)
         recaptcha_result = recaptcha_request.json()
 
-        if not recaptcha_result.get('success'):
+        #'score': 0.9
+
+        if not recaptcha_result.get('success') or not recaptcha_result.get('score') > 0.7:
             return JsonResponse({'error': 'Invalid reCAPTCHA. Please try again.'}, status=400)
 
         from_name = data.get('from_name')
